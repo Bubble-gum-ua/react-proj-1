@@ -1,6 +1,6 @@
 .nav {
     grid-area: n;
-    background-color: blueviolet;
+    background-color: cornflowerblue;
     padding: 20px;
 
 }
@@ -9,11 +9,20 @@
 .item a {
     color: white;
     text-decoration: none;
+    }
+.item a:hover {
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid darkred;
+    padding: 4px;
+    border-radius: 15px;
+    background-color: forestgreen;
+
+
 }
 
-
 .item a.active {
-    color: firebrick;
+    color: blue;
     font-weight: bold;
     font-size: 30px;
 
