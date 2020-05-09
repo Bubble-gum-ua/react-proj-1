@@ -4,7 +4,7 @@ import MyPosts from "./Myposts/MyPosts";
 
 const Profile = () => {
     return (
-        <div className={s.content}>
+        <div>
         <div>
             <img className={s.headimg} src="https://cdn.beach-inspector.com/static/awards/lp-header.jpg?w=1200&h=400&fit=crop"/>
         </div>
