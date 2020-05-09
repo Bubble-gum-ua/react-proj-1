@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29fde835-3829-4a2e-9869-45b56f545947" name="Default Changelist" comment="Added menu buttons &quot;News&quot;, &quot;Music&quot;, &quot;Settings&quot;">
+    <list default="true" id="29fde835-3829-4a2e-9869-45b56f545947" name="Default Changelist" comment="Added messages in list">
+      <change afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Myposts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Myposts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Myposts/MyPosts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Myposts/MyPosts.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Profile.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Profile/ProfileInfo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -53,11 +57,11 @@
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Header" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile\ProfileInfo" />
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components" />
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Dialogs" />
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile\Myposts\Post\Avatar" />
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile" />
-      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile\Myposts\Post" />
     </key>
   </component>
   <component name="RunManager">
@@ -103,7 +107,7 @@
       <workItem from="1589030032698" duration="14000" />
       <workItem from="1589031225999" duration="3617000" />
       <workItem from="1589034873662" duration="196000" />
-      <workItem from="1589035091262" duration="6951000" />
+      <workItem from="1589035091262" duration="11126000" />
     </task>
     <task id="LOCAL-00001" summary="Added Dialogs folder and 2 files - Dialogs.jsx&amp;Dialogs.module.jsx">
       <created>1589033541635</created>
@@ -126,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589036962277</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added messages in list">
+      <created>1589045410350</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589045410350</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +150,8 @@
     <MESSAGE value="Added Dialogs folder and 2 files - Dialogs.jsx&amp;Dialogs.module.jsx" />
     <MESSAGE value="Added routings for menubar" />
     <MESSAGE value="Added menu buttons &quot;News&quot;, &quot;Music&quot;, &quot;Settings&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added menu buttons &quot;News&quot;, &quot;Music&quot;, &quot;Settings&quot;" />
+    <MESSAGE value="Added messages in list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added messages in list" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Inspections" timestamp="1588012022105">
@@ -154,10 +166,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588700996153" />
-    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1589043592553">
+    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1589048687686">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1589043592553" />
+    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1589048687686" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1589034933896">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -186,10 +198,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1589033626160" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1587746543984">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1589046853008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1587746543984" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1589046853008" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588011225800">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

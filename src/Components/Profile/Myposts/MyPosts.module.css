@@ -1,3 +1,11 @@
 .posts img {
     width: 70px;
 }
+
+.postsBlock {
+    padding: 10px;
+}
+
+.posts {
+    margin-top: 10px;
+}

@@ -11,6 +11,11 @@
     text-decoration: none;
 }
 
+
 .item a.active {
-    color: darkred;
+    color: firebrick;
+    font-weight: bold;
+    font-size: 30px;
+
 }
+
