@@ -2,6 +2,8 @@
     grid-area: n;
     background-color: cornflowerblue;
     padding: 20px;
+    opacity: 95%;
+    border: 1px solid black;
 
 }
 
@@ -13,10 +15,10 @@
 .item a:hover {
     font-size: 25px;
     font-weight: bold;
-    border: 2px solid darkred;
+    border: 2px dashed darkred;
     padding: 4px;
     border-radius: 15px;
-    background-color: forestgreen;
+
 
 
 }
