@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="29fde835-3829-4a2e-9869-45b56f545947" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Profile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +116,7 @@
       <workItem from="1589035091262" duration="11126000" />
       <workItem from="1589053371076" duration="62000" />
       <workItem from="1589055116823" duration="615000" />
-      <workItem from="1589057643959" duration="9011000" />
+      <workItem from="1589057643959" duration="10067000" />
     </task>
     <task id="LOCAL-00001" summary="Added Dialogs folder and 2 files - Dialogs.jsx&amp;Dialogs.module.jsx">
       <created>1589033541635</created>
@@ -155,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589066502816</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Styles part 2">
+      <created>1589070715332</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589070715332</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,7 +188,8 @@
     <MESSAGE value="Added menu buttons &quot;News&quot;, &quot;Music&quot;, &quot;Settings&quot;" />
     <MESSAGE value="Added messages in list" />
     <MESSAGE value="Styles for sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styles for sidebar" />
+    <MESSAGE value="Styles part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Styles part 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Inspections" timestamp="1588012022105">

@@ -4,6 +4,10 @@
     padding: 10px;
 }
 
+.cardProf {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
 
 .headimg {
     width: 1000px;
