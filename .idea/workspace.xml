@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="29fde835-3829-4a2e-9869-45b56f545947" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Myposts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Myposts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +108,7 @@
       <workItem from="1589053371076" duration="62000" />
       <workItem from="1589055116823" duration="615000" />
       <workItem from="1589057643959" duration="10067000" />
-      <workItem from="1589374897077" duration="7143000" />
+      <workItem from="1589374897077" duration="16450000" />
     </task>
     <task id="LOCAL-00001" summary="Added Dialogs folder and 2 files - Dialogs.jsx&amp;Dialogs.module.jsx">
       <created>1589033541635</created>
@@ -154,7 +159,28 @@
       <option name="project" value="LOCAL" />
       <updated>1589379402354</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added 2 files for components">
+      <created>1589382215673</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589382215673</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added 2 files for components">
+      <created>1589382343654</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589382343654</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added 2 files for components">
+      <created>1589382366667</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1589382366667</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +210,8 @@
     <MESSAGE value="Styles for sidebar" />
     <MESSAGE value="Styles part 2" />
     <MESSAGE value="Refactoring code with mapping massive (.map)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring code with mapping massive (.map)" />
+    <MESSAGE value="Added 2 files for components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 2 files for components" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Inspections" timestamp="1588012022105">
@@ -199,10 +226,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589380398382" />
-    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1589382341100">
+    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1589382365045">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1589382341100" />
+    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1589382365045" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1589034933896">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -223,6 +250,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589035017802" />
+    <state x="384" y="74" key="RollbackChangesDialog" timestamp="1589387271637">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="384" y="74" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589387271637" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1589034938176">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -231,24 +262,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1589033626160" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1589046853008">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1589389569895">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1589046853008" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1589389569895" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588011225800">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1588011225800" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Components/Dialogs/DialogItem/DialogsItem.jsx</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
