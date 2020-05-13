@@ -4,7 +4,6 @@
     <list default="true" id="29fde835-3829-4a2e-9869-45b56f545947" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Myposts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Myposts/MyPosts.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Dialogs/Message" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -42,19 +41,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile\ProfileInfo" />
-      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components" />
-      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Dialogs" />
-      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile\Myposts\Post\Avatar" />
-      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile\Myposts\Post\Likes" />
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile\Myposts\Post" />
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile" />
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Navbar" />
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Dialogs\Message" />
+      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Dialogs\DialogItem" />
+      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Dialogs" />
+      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile\ProfileInfo" />
+      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components" />
     </key>
   </component>
   <component name="RunManager">
@@ -104,7 +103,7 @@
       <workItem from="1589053371076" duration="62000" />
       <workItem from="1589055116823" duration="615000" />
       <workItem from="1589057643959" duration="10067000" />
-      <workItem from="1589374897077" duration="4148000" />
+      <workItem from="1589374897077" duration="7143000" />
     </task>
     <task id="LOCAL-00001" summary="Added Dialogs folder and 2 files - Dialogs.jsx&amp;Dialogs.module.jsx">
       <created>1589033541635</created>
@@ -148,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589070715332</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactoring code with mapping massive (.map)">
+      <created>1589379402354</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589379402354</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +183,8 @@
     <MESSAGE value="Added messages in list" />
     <MESSAGE value="Styles for sidebar" />
     <MESSAGE value="Styles part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styles part 2" />
+    <MESSAGE value="Refactoring code with mapping massive (.map)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring code with mapping massive (.map)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Inspections" timestamp="1588012022105">
@@ -188,10 +195,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="455" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1589031305863" />
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588700996153">
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589380398382">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588700996153" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589380398382" />
     <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1589379399244">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -232,5 +239,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1588011225800" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Components/Dialogs/DialogItem/DialogsItem.jsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
