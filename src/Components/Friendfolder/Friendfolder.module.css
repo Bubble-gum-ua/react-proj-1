@@ -1,0 +1,10 @@
+.friends {
+    border: 1px solid black;
+    color: white;
+    position: center;
+        background-color: deepskyblue;
+}
+
+.friends h3 {
+    text-align: center;
+}

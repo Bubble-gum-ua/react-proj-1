@@ -9,7 +9,9 @@ import {BrowserRouter, Route} from "react-router-dom";
 import News from "./Components/News/News";
 import Music from "./Components/Music/Music";
 import Settings from "./Components/Settings/Settings";
-import DialogImport from "./index";
+import Friendfolder from "./Components/Friendfolder/Friendfolder";
+
+
 
 
 const App = (props) => {
@@ -27,6 +29,7 @@ const App = (props) => {
                     <Route path="/music" render={() => <Music/>}/>
                     <Route path="/settings" render={() => <Settings/>}/>
                 </div>
+                <Friendfolder state={props.state.friendList}/>
             </div>
         </BrowserRouter>
     );

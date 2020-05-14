@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29fde835-3829-4a2e-9869-45b56f545947" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Avatars/Busya.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Avatars/Freddy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Avatars/Lena.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Avatars/Lusuy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Avatars/Ozzeron.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Friendfolder/Friendfolder.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Friendfolder/Friendfolder.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Friendfolder/Friendlist/Friendlist.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Friendfolder/Friendlist/Friendlist.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/DialogItem/DialogsItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/DialogItem/DialogsItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
@@ -24,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -44,7 +44,8 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Dialogs/Message" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Friendfolder/Friendlist" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -52,19 +53,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Friendfolder\Friendlist" />
+      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Dialogs\Message" />
+      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Dialogs\DialogItem" />
+      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Dialogs" />
+      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile\ProfileInfo" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile\Myposts\Post\Likes" />
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile\Myposts\Post" />
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile" />
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Navbar" />
       <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Header" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Dialogs\Message" />
-      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Dialogs\DialogItem" />
-      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Dialogs" />
-      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components\Profile\ProfileInfo" />
-      <recent name="C:\Users\Bubble_gum\Documents\Reactlearn\Projects\01-first-project\react-proj-1\src\Components" />
     </key>
   </component>
   <component name="RunManager">
@@ -116,7 +117,7 @@
       <workItem from="1589057643959" duration="10067000" />
       <workItem from="1589374897077" duration="16861000" />
       <workItem from="1589464132369" duration="3451000" />
-      <workItem from="1589467613865" duration="5212000" />
+      <workItem from="1589467613865" duration="9868000" />
     </task>
     <task id="LOCAL-00001" summary="Added Dialogs folder and 2 files - Dialogs.jsx&amp;Dialogs.module.jsx">
       <created>1589033541635</created>
@@ -209,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589466562938</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added avatars to dialogs list.">
+      <created>1589474330393</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1589474330393</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +251,8 @@
     <MESSAGE value="Added 2 files for components" />
     <MESSAGE value="Data element migrate to index.js file. Write props route to data." />
     <MESSAGE value="Added Redux folder. Migrate data from index.js to state.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Redux folder. Migrate data from index.js to state.js" />
+    <MESSAGE value="Added avatars to dialogs list." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added avatars to dialogs list." />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Inspections" timestamp="1588012022105">
@@ -258,10 +267,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589380398382" />
-    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1589466561460">
+    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1589474328305">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1589466561460" />
+    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1589474328305" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1589034933896">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

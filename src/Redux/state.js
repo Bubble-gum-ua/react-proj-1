@@ -49,9 +49,32 @@ let state = {
                 avatar: <img alt={""} src="https://icatcare.org/app/uploads/2018/06/Layer-1704-1920x840.jpg"/>
             }
         ]
+    },
+
+    friendList: {
+        friendWrapper:
+            [
+                {
+                    id: 1,
+                    name: "Ozzeron",
+                    avatar: <img alt={""}
+                                 src="https://scontent.fhrk2-1.fna.fbcdn.net/v/t1.0-9/10439027_865679430172240_8121937726512808115_n.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_ohc=ZGnGLW4tqJkAX-raucG&_nc_ht=scontent.fhrk2-1.fna&oh=aae310afc9bace3a4c828148c0170549&oe=5EE39F96"/>
+                },
+
+                {
+                    id: 2,
+                    name: "Lena",
+                    avatar: <img alt={""}
+                                 src="https://scontent.fhrk2-1.fna.fbcdn.net/v/t1.0-9/55471845_377284916190595_4144988876269682688_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=XY7sVPEDwn0AX-sOfST&_nc_ht=scontent.fhrk2-1.fna&oh=52b7efd264337a8586c64005d4a476b1&oe=5EE2CD14"/>
+                },
+                {
+                    id: 3,
+                    name: "Lusyi",
+                    avatar: <img alt={""} src="https://dota2.ru/img/heroes/pudge/portrait.jpg"/>
+                }
+            ]
+
     }
-
-
-};
+}
 
 export default state;

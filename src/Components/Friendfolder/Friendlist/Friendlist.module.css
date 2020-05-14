@@ -1,0 +1,22 @@
+.friends img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+.friends {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+
+}
+
+.friends a {
+    text-decoration: none;
+    color: white;
+}
+
+.friends a:hover {
+    color: firebrick;
+
+}
