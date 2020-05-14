@@ -1,6 +1,6 @@
 .dialogs {
     display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 4fr 10fr;
 
 }
 
@@ -21,6 +21,7 @@
     color: aqua;
     font-weight: bold;
     font-size: 25px;
+    border: none;
    
 }
 .messages {
@@ -29,4 +30,13 @@
 
 .message {
 
+}
+
+.active img {
+    width: 50px;
+    padding: 5px;
+}
+
+.active {
+    border: 1px solid black;
 }
