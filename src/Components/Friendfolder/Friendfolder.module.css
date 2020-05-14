@@ -2,9 +2,15 @@
     border: 1px solid black;
     color: white;
     position: center;
-        background-color: deepskyblue;
+    background-color: deepskyblue;
+    border-bottom-left-radius: 25px;
+    padding: 5px;
 }
 
 .friends h3 {
     text-align: center;
+    background: yellowgreen; /* Цвет фона */
+    box-shadow: 0 0 15px rgba(0, 0, 0.1, 1); /* Параметры тени */
+    padding: 15px;
+    color: dodgerblue;
 }

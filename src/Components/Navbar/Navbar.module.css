@@ -11,14 +11,15 @@
 .item a {
     color: white;
     text-decoration: none;
-    }
+}
+
 .item a:hover {
     font-size: 25px;
     font-weight: bold;
-    border: 2px dashed darkred;
-    padding: 4px;
-    border-radius: 15px;
-
+    background: #fc0; /* Цвет фона */
+    box-shadow: 0 0 5px rgba(0, 0, 1, 1); /* Параметры тени */
+    padding: 10px;
+    color: darkred;
 
 
 }

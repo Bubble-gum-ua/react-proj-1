@@ -9,6 +9,8 @@
     color: white;
     padding: 5px;
 
+
+
 }
 
 .friends a {
@@ -20,3 +22,13 @@
     color: firebrick;
 
 }
+
+.friends a.active {
+    color: darkslateblue;
+
+    background: #fc0; /* Цвет фона */
+    box-shadow: 0 0 5px rgba(0, 0, 1, 1); /* Параметры тени */
+    padding: 10px;
+
+}
+

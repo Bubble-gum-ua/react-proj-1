@@ -22,15 +22,15 @@
     font-weight: bold;
     font-size: 25px;
     border: none;
+    background: crimson; /* Цвет фона */
+    box-shadow: 0 0 5px rgba(0, 0, 1, 1); /* Параметры тени */
+    padding: 10px;
    
 }
 .messages {
     padding: 10px;
 }
 
-.message {
-
-}
 
 .active img {
     width: 50px;
@@ -38,6 +38,3 @@
     border-radius: 10px;
 }
 
-.active {
-    border: 1px solid black;
-}

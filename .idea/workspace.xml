@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="29fde835-3829-4a2e-9869-45b56f545947" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/Components/Friendfolder/Friendfolder.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Components/Friendfolder/Friendfolder.module.css" afterDir="false" />
@@ -12,6 +13,10 @@
       <change beforePath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dialogs/Dialogs.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
     </list>
+=======
+    <list default="true" id="29fde835-3829-4a2e-9869-45b56f545947" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,10 +119,14 @@
       <workItem from="1589035091262" duration="11126000" />
       <workItem from="1589053371076" duration="62000" />
       <workItem from="1589055116823" duration="615000" />
+<<<<<<< Updated upstream
       <workItem from="1589057643959" duration="10067000" />
       <workItem from="1589374897077" duration="16861000" />
       <workItem from="1589464132369" duration="3451000" />
       <workItem from="1589467613865" duration="9868000" />
+=======
+      <workItem from="1589057643959" duration="10325000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="Added Dialogs folder and 2 files - Dialogs.jsx&amp;Dialogs.module.jsx">
       <created>1589033541635</created>
@@ -161,6 +170,7 @@
       <option name="project" value="LOCAL" />
       <updated>1589070715332</updated>
     </task>
+<<<<<<< Updated upstream
     <task id="LOCAL-00007" summary="Refactoring code with mapping massive (.map)">
       <created>1589379402354</created>
       <option name="number" value="00007" />
@@ -218,6 +228,16 @@
       <updated>1589474330393</updated>
     </task>
     <option name="localTasksCounter" value="15" />
+=======
+    <task id="LOCAL-00007" summary="Styles part 3">
+      <created>1589072124466</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589072124466</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,12 +267,17 @@
     <MESSAGE value="Added messages in list" />
     <MESSAGE value="Styles for sidebar" />
     <MESSAGE value="Styles part 2" />
+<<<<<<< Updated upstream
     <MESSAGE value="Refactoring code with mapping massive (.map)" />
     <MESSAGE value="Added 2 files for components" />
     <MESSAGE value="Data element migrate to index.js file. Write props route to data." />
     <MESSAGE value="Added Redux folder. Migrate data from index.js to state.js" />
     <MESSAGE value="Added avatars to dialogs list." />
     <option name="LAST_COMMIT_MESSAGE" value="Added avatars to dialogs list." />
+=======
+    <MESSAGE value="Styles part 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Styles part 3" />
+>>>>>>> Stashed changes
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Inspections" timestamp="1588012022105">

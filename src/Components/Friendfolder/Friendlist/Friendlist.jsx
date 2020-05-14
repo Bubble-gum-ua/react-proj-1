@@ -1,11 +1,15 @@
 import React from "react";
 import s from "./Friendlist.module.css"
+import {NavLink} from "react-router-dom";
 
 const FriendList = (props) =>{
+    let path = "/" + props.id;
     return(
 
         <div className={s.friends}>
-            <a href="" >  {props.name}  {props.avatar} </a>
+            <NavLink to={path} activeClassName={s.active}> {props.avatar} {props.name} </NavLink>
+
+
         </div>
 
 
