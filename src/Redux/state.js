@@ -51,7 +51,7 @@ let state = {
         ]
     },
 
-    friendList: {
+    sideBar: {
         friendWrapper:
             [
                 {
