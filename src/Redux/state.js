@@ -12,7 +12,8 @@ let state = {
             {
                 id: 2, message: "It's my first post", likesCount: 20, photoAvatar: <img alt={""}
                                                                                         src="https://cdna.artstation.com/p/assets/images/images/019/650/704/large/ynorka-chiu-jaina-proudmoore-by-ynorka.jpg?1564434256"/>
-            },]
+            },],
+        newPostText: "look at u'r code"
 
     },
 
@@ -78,14 +79,25 @@ let state = {
     }
 }
 
-export let addPost = (postMessage) =>
+window.state = state;
+
+export let addPost = () =>
 {
     let newPost = {
         id:6,
-        message: postMessage,
+        message: state.profilePage.newPostText,
         likesCount: 0
     };
     state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = "";
+    rerenderEntireTree(state);
+
+};
+
+export let updateNewPostText = (newText) =>
+{
+
+    state.profilePage.newPostText = newText;
     rerenderEntireTree(state);
 
 };
