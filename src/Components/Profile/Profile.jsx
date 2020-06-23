@@ -2,7 +2,7 @@ import React from "react";
 import s from "./Profile.module.css";
 import MyPosts from "./Myposts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
-import {addPost} from "../../Redux/state";
+
 
 const Profile = (props) => {
 
@@ -10,7 +10,7 @@ const Profile = (props) => {
     return (
         <div className={s.mainBar}>
             <ProfileInfo/>
-            <MyPosts posts={props.profilePage.posts} newPostText={props.profilePage.newPostText} addPost={addPost} updateNewPostText={props.updateNewPostText}/>
+            <MyPosts posts={props.profilePage.posts} newPostText={props.profilePage.newPostText} addPost={props.addPost} updateNewPostText={props.updateNewPostText}/>
         </div>
     )
 
