@@ -1,10 +1,30 @@
 import React from 'react';
 import './index.css';
+import state, {subscribe} from "./Redux/state";
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {rerenderEntireTree} from "./render";
-import state from "./Redux/state";
+import {BrowserRouter} from "react-router-dom";
+import {addPost, updateNewPostText} from "./Redux/state";
+
+/*addPost("FFFFas");*/
+
+let rerenderEntireTree = (state) => {
+    ReactDOM.render(
+        <React.StrictMode>
+            <BrowserRouter>
+                <App state={state} addPost={addPost} updateNewPostText={updateNewPostText}/>
+            </BrowserRouter>
+        </React.StrictMode>,
+        document.getElementById('root')
+    );
+
+}
 
 rerenderEntireTree(state);
+
+subscribe(rerenderEntireTree);
 
 
 
