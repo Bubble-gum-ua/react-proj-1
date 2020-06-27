@@ -2,22 +2,35 @@ import React from "react";
 import s from "./Dialogs.module.css"
 import DialogItem from "./DialogItem/DialogsItem";
 import MessageItem from "./Message/Message";
+import {sendMessageCreator, updateNewMessageBodyCreator} from "../../Redux/state";
 
 
 const Dialogs = (props) => {
 
-
-    let dialogsElements = props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id} avatar={d.avatar}/>);
-    let messagesElements = props.state.messages.map(m => <MessageItem message={m.message}/>);
+    let state = props.store.getState().dialogsPage;
 
 
-    let typoMessage = React.createRef();
+    let dialogsElements = state.dialogs.map(d => <DialogItem name={d.name} id={d.id} avatar={d.avatar}/>);
+    let messagesElements = state.messages.map(m => <MessageItem message={m.message}/>);
 
-    let meassageReff = () => {
-        let message = typoMessage.current.value;
-        alert(message)
-    }
+    let newMessageBody = state.newMessageBody;
 
+
+    /*  let typoMessage = React.createRef();*/
+
+    /*    let meassageReff = () => {
+            let message = typoMessage.current.value;
+            alert(message)
+        }*/
+
+    let pnSendMessageClick = () => {
+        props.store.dispatch(sendMessageCreator());
+    };
+
+    let onNewMessageChange = (e) => {
+        let body = e.target.value;
+        props.store.dispatch(updateNewMessageBodyCreator(body));
+    };
 
 
     return (
@@ -27,14 +40,20 @@ const Dialogs = (props) => {
                 {dialogsElements}
             </div>
             <div className={s.messages}>
-                {messagesElements}
+                <div>{messagesElements}</div>
+                <div> <textarea value={newMessageBody}
+                                onChange={onNewMessageChange}
+                                placeholder="Enter your message"></textarea></div>
+                <div>
+                    <button onClick={pnSendMessageClick}>Send</button>
+                </div>
             </div>
-            <div>
+            {/* <div>
                 <textarea ref={typoMessage}></textarea>
             </div>
             <div>
                 <button onClick={meassageReff}>Answer</button>
-            </div>
+            </div>*/}
         </div>
 
     )

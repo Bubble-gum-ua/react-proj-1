@@ -3,6 +3,11 @@ import React from "react";
 const ADD_POST = "ADD-POST";
 const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 
+
+const UPDATE_NEW_MESSAGE_BODY = "UPDATE-NEW-MESSAGE-BODY";
+const SEND_MESSAGE = "SEND-MESSAGE";
+
+
 let store = {
     _state: {
         profilePage: {
@@ -32,14 +37,14 @@ let store = {
                     id: 1,
                     name: 'Ozzeron',
                     avatar: <img alt={""}
-                                 src="https://scontent.fhrk2-1.fna.fbcdn.net/v/t1.0-9/10439027_865679430172240_8121937726512808115_n.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_ohc=ZGnGLW4tqJkAX-raucG&_nc_ht=scontent.fhrk2-1.fna&oh=aae310afc9bace3a4c828148c0170549&oe=5EE39F96"/>
+                                 src="https://scontent.fhrk2-1.fna.fbcdn.net/v/t1.0-9/10439027_865679430172240_8121937726512808115_n.jpg?_nc_cat=111&_nc_sid=85a577&_nc_ohc=tOXkwtAYbUEAX_kX-Pp&_nc_ht=scontent.fhrk2-1.fna&oh=5e18469b31e8a3ba59e830809bda285a&oe=5F1EF316"/>
                 },
                 {id: 2, name: 'Lusyi', avatar: <img alt={""} src="https://dota2.ru/img/heroes/pudge/portrait.jpg"/>},
                 {
                     id: 3,
                     name: 'Lena',
                     avatar: <img alt={""}
-                                 src="https://scontent.fhrk2-1.fna.fbcdn.net/v/t1.0-9/55471845_377284916190595_4144988876269682688_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=XY7sVPEDwn0AX-sOfST&_nc_ht=scontent.fhrk2-1.fna&oh=52b7efd264337a8586c64005d4a476b1&oe=5EE2CD14"/>
+                                 src="https://scontent.fhrk2-1.fna.fbcdn.net/v/t1.0-9/p960x960/55471845_377284916190595_4144988876269682688_o.jpg?_nc_cat=110&_nc_sid=85a577&_nc_ohc=YY6KOFhqKc8AX_Q2POZ&_nc_ht=scontent.fhrk2-1.fna&_nc_tp=6&oh=91b7a7c671fadcb838012abd7a7d8e47&oe=5F1BB0C4"/>
                 },
                 {
                     id: 4,
@@ -52,7 +57,8 @@ let store = {
                     name: 'Busya',
                     avatar: <img alt={""} src="https://icatcare.org/app/uploads/2018/06/Layer-1704-1920x840.jpg"/>
                 }
-            ]
+            ],
+            newMessageBody: ""
         },
 
         sideBar: {
@@ -62,14 +68,14 @@ let store = {
                         id: 1,
                         name: "Ozzeron",
                         avatar: <img alt={""}
-                                     src="https://scontent.fhrk2-1.fna.fbcdn.net/v/t1.0-9/10439027_865679430172240_8121937726512808115_n.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_ohc=ZGnGLW4tqJkAX-raucG&_nc_ht=scontent.fhrk2-1.fna&oh=aae310afc9bace3a4c828148c0170549&oe=5EE39F96"/>
+                                     src="https://scontent.fhrk2-1.fna.fbcdn.net/v/t1.0-9/10439027_865679430172240_8121937726512808115_n.jpg?_nc_cat=111&_nc_sid=85a577&_nc_ohc=tOXkwtAYbUEAX_kX-Pp&_nc_ht=scontent.fhrk2-1.fna&oh=5e18469b31e8a3ba59e830809bda285a&oe=5F1EF316"/>
                     },
 
                     {
                         id: 2,
                         name: "Lena",
                         avatar: <img alt={""}
-                                     src="https://scontent.fhrk2-1.fna.fbcdn.net/v/t1.0-9/55471845_377284916190595_4144988876269682688_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=XY7sVPEDwn0AX-sOfST&_nc_ht=scontent.fhrk2-1.fna&oh=52b7efd264337a8586c64005d4a476b1&oe=5EE2CD14"/>
+                                     src="https://scontent.fhrk2-1.fna.fbcdn.net/v/t1.0-9/p960x960/55471845_377284916190595_4144988876269682688_o.jpg?_nc_cat=110&_nc_sid=85a577&_nc_ohc=YY6KOFhqKc8AX_Q2POZ&_nc_ht=scontent.fhrk2-1.fna&_nc_tp=6&oh=91b7a7c671fadcb838012abd7a7d8e47&oe=5F1BB0C4"/>
                     },
                     {
                         id: 3,
@@ -93,7 +99,7 @@ let store = {
 
 
     dispatch(action) {
-        if (action.type === "ADD-POST") {
+        if (action.type === ADD_POST) {
             let newPost = {
                 id: 6,
                 message: this._state.profilePage.newPostText,
@@ -103,8 +109,16 @@ let store = {
             this._state.profilePage.newPostText = "";
             this._callSubscriber(this._state);
 
-        } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+        } else if (action.type === UPDATE_NEW_POST_TEXT) {
             this._state.profilePage.newPostText = action.newText;
+            this._callSubscriber(this._state);
+        } else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
+            this._state.dialogsPage.newMessageBody = action.body;
+            this._callSubscriber(this._state);
+        } else if (action.type === SEND_MESSAGE) {
+            let body = this._state.dialogsPage.newMessageBody;
+            this._state.dialogsPage.newMessageBody = "";
+            this._state.dialogsPage.messages.push({id: 6, message: body});
             this._callSubscriber(this._state);
         }
     }
@@ -114,6 +128,11 @@ let store = {
 export const addPostActionCreator = () => ({type: ADD_POST});
 export const updateNewPostTextActionCreator = (text) =>
     ({type: UPDATE_NEW_POST_TEXT, newText: text});
+
+export const sendMessageCreator = () => ({type: SEND_MESSAGE});
+export const updateNewMessageBodyCreator = (body) =>
+    ({type: UPDATE_NEW_MESSAGE_BODY, body: body});
+
 
 
 export default store;

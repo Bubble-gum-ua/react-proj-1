@@ -40,7 +40,7 @@
 
 
 .dialogs textarea {
-    background: crimson; /* Цвет фона */
+    background: yellow; /* Цвет фона */
     box-shadow: 0 0 5px rgba(0, 0, 1, 1); /* Параметры тени */
     padding: 10px;
 }
