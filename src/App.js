@@ -26,7 +26,7 @@ const App = (props) => {
                 <Route path="/music" render={() => <Music/>}/>
                 <Route path="/settings" render={() => <Settings/>}/>
             </div>
-            <Friendfolder state={props.state.sideBar}/>
+           {/* <Friendfolder state={props.state.sideBar}/>*/}
         </div>
 
     );
