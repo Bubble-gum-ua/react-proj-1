@@ -7,9 +7,9 @@ import {Route} from "react-router-dom";
 import News from "./Components/News/News";
 import Music from "./Components/Music/Music";
 import Settings from "./Components/Settings/Settings";
-import Friendfolder from "./Components/Friendfolder/Friendfolder";
 import DialogsContainer from "./Components/Dialogs/DialogsContainer";
 import UsersContainer from "./Components/Users/UsersContainer";
+import FriendsFolderContainer from "./Components/Friendfolder/FriendfolderContainer";
 
 
 
@@ -28,7 +28,7 @@ const App = (props) => {
                 <Route path="/settings" render={() => <Settings/>}/>
                 <Route path="/users" render={() => <UsersContainer/>}/>
             </div>
-           {/* <Friendfolder state={props.state.sideBar}/>*/}
+            <FriendsFolderContainer />
         </div>
 
     );
