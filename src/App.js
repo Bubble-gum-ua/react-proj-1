@@ -9,6 +9,7 @@ import Music from "./Components/Music/Music";
 import Settings from "./Components/Settings/Settings";
 import Friendfolder from "./Components/Friendfolder/Friendfolder";
 import DialogsContainer from "./Components/Dialogs/DialogsContainer";
+import UsersContainer from "./Components/Users/UsersContainer";
 
 
 
@@ -25,6 +26,7 @@ const App = (props) => {
                 <Route path="/news" render={() => <News/>}/>
                 <Route path="/music" render={() => <Music/>}/>
                 <Route path="/settings" render={() => <Settings/>}/>
+                <Route path="/users" render={() => <UsersContainer/>}/>
             </div>
            {/* <Friendfolder state={props.state.sideBar}/>*/}
         </div>

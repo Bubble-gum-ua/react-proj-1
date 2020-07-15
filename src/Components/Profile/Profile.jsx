@@ -4,7 +4,7 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPostsContainer from "./Myposts/MyPostsContainer";
 
 
-const Profile = (props) => {
+const Profile = () => {
 
     return (
         <div className={s.mainBar}>
