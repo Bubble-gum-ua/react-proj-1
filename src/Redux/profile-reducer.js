@@ -2,8 +2,6 @@ import React from "react";
 import PostImage1 from "../Assets/Images/Postimage1.png"
 import PostImage2 from "../Assets/Images/Postimage2.png"
 
-
-
 const ADD_POST = "ADD-POST";
 const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 
@@ -51,8 +49,8 @@ const profileReducer = (state = initialState, action) => {
 
 
 };
-export const addPostActionCreator = () => ({type: ADD_POST});
-export const updateNewPostTextActionCreator = (text) =>
+export const addPost = () => ({type: ADD_POST});
+export const updateNewPostText = (text) =>
     ({type: UPDATE_NEW_POST_TEXT, newText: text});
 
 export default profileReducer;
