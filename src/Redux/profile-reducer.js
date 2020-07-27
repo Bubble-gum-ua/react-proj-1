@@ -1,4 +1,8 @@
 import React from "react";
+import PostImage1 from "../Assets/Images/Postimage1.png"
+import PostImage2 from "../Assets/Images/Postimage2.png"
+
+
 
 const ADD_POST = "ADD-POST";
 const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
@@ -7,11 +11,11 @@ let initialState = {
     posts: [
         {
             id: 1, message: "Hi, how are you?", likesCount: 15, photoAvatar: <img alt={""}
-                                                                                  src="https://i.pinimg.com/originals/3d/6f/b2/3d6fb2056e94691bf76a4426dd826aa4.jpg"/>
+                                                                                  src={PostImage1}/>
         },
         {
             id: 2, message: "It's my first post", likesCount: 20, photoAvatar: <img alt={""}
-                                                                                    src="https://cdna.artstation.com/p/assets/images/images/019/650/704/large/ynorka-chiu-jaina-proudmoore-by-ynorka.jpg?1564434256"/>
+                                                                                    src={PostImage2}/>
         },],
     newPostText: "look at u'r code"
 
