@@ -2,9 +2,14 @@ import React from "react";
 import s from "./ProfileInfo.module.css";
 import AvatarMain from "../../../Assets/Images/AvatarMain.png"
 import MainWallpaper from "../../../Assets/Images/MainWalpaper.jpg"
+import Preloader from "../../Common/Preloader/Preloader";
 
 
-const ProfileInfo = () => {
+const ProfileInfo = (props) => {
+
+    if (!props.profile) {
+        return <Preloader/>
+    }
     return (
         <div>
 
@@ -19,6 +24,10 @@ const ProfileInfo = () => {
 
                 </div>
                 <div className={s.discriptionBlock}>
+                    <img src={props.profile.photos.large}/>
+                    <div>{props.profile.fullName}</div>
+                    <div>{props.profile.contacts.facebook}</div>
+
                     ava+disc
                 </div>
             </div>
