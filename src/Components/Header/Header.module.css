@@ -12,3 +12,13 @@
     margin-top: 0%;
 }
 
+
+.loginBlock {
+    float: right;
+    margin-right: 15px;
+
+}
+
+.loginBlock a {
+    color: yellow;
+}
