@@ -1,6 +1,7 @@
 import React from "react";
 import PostImage1 from "../Assets/Images/Postimage1.png"
 import PostImage2 from "../Assets/Images/Postimage2.png"
+import {usersAPI} from "../API/Api";
 
 const ADD_POST = "ADD-POST";
 const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
@@ -61,6 +62,12 @@ const profileReducer = (state = initialState, action) => {
 };
 export const addPost = () => ({type: ADD_POST});
 export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile});
+export const getUserProfile = (userId) => (dispatch) => {
+    usersAPI.getProfile(userId)
+        .then(response => {
+            dispatch(setUserProfile(response.data));
+        });
+};
 export const updateNewPostText = (text) =>
     ({type: UPDATE_NEW_POST_TEXT, newText: text});
 
