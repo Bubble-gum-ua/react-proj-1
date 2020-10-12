@@ -1,6 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import Friendfolder from "./Friendfolder";
+import {compose} from "redux";
 
 let mapStateToProps = (state)=> {
     debugger;
@@ -13,6 +14,6 @@ let mapDispatchToProps = (dispatch)=> {
     return{}
 }
 
-const FriendsFolderContainer = connect(mapStateToProps, mapDispatchToProps) (Friendfolder);
+export default compose(connect(mapStateToProps, mapDispatchToProps) )
+(Friendfolder);
 
-export default FriendsFolderContainer;
