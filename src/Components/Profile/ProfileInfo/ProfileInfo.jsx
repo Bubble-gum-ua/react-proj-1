@@ -3,6 +3,7 @@ import s from "./ProfileInfo.module.css";
 import AvatarMain from "../../../Assets/Images/AvatarMain.png"
 import MainWallpaper from "../../../Assets/Images/MainWalpaper.jpg"
 import Preloader from "../../Common/Preloader/Preloader";
+import ProfileStatus from "./ProfileStatus";
 
 
 const ProfileInfo = (props) => {
@@ -13,10 +14,10 @@ const ProfileInfo = (props) => {
     return (
         <div>
 
-            <div>
+            {/*  <div>
                 <img className={s.headimg}
                      src={MainWallpaper}/>
-            </div>
+            </div>*/}
             <div className={s.cardProf}>
                 <div>
                     <img className={s.ava}
@@ -27,6 +28,7 @@ const ProfileInfo = (props) => {
                     <img src={props.profile.photos.large}/>
                     <div>{props.profile.fullName}</div>
                     <div>{props.profile.contacts.facebook}</div>
+                    <ProfileStatus status={"I'm back"} />
 
                     ava+disc
                 </div>
