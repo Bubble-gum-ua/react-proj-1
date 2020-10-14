@@ -4,7 +4,7 @@ import Friendfolder from "./Friendfolder";
 import {compose} from "redux";
 
 let mapStateToProps = (state)=> {
-    debugger;
+
     return{
         friendWrapper: state.sideBar.friendWrapper
     }
