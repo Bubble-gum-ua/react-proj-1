@@ -28,7 +28,7 @@ const ProfileInfo = (props) => {
                     <img src={props.profile.photos.large}/>
                     <div>{props.profile.fullName}</div>
                     <div>{props.profile.contacts.facebook}</div>
-                    <ProfileStatus status={"I'm back"} />
+                    <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
 
                     ava+disc
                 </div>
