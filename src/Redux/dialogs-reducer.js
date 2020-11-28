@@ -5,7 +5,6 @@ import Lusuy from "../Assets/Images/Lusuy.jpg"
 import Freddy from "../Assets/Images/Freddy.jpg"
 import Busya from "../Assets/Images/Busya.jpg"
 
-const UPDATE_NEW_MESSAGE_BODY = "UPDATE-NEW-MESSAGE-BODY";
 const SEND_MESSAGE = "SEND-MESSAGE";
 
 let initialState = {
@@ -41,8 +40,7 @@ let initialState = {
             name: 'Busya',
             avatar: <img alt={""} src={Busya}/>
         }
-    ],
-    newMessageBody: ""
+    ]
 };
 
 const dialogsReducer = (state = initialState, action) => {
@@ -50,28 +48,18 @@ const dialogsReducer = (state = initialState, action) => {
     let stateCopy;
 
     switch (action.type) {
-        case UPDATE_NEW_MESSAGE_BODY :
-            return {
-                ...state,
-                newMessageBody: action.body
-            };
-
 
         case SEND_MESSAGE :
-            let body = state.newMessageBody;
+            let body = action.newMessageBody;
             return {
                 ...state,
-                newMessageBody: "",
                 messages: [...state.messages, {id: 6, message: body}]
             };
 
-
         default:
             return state;
-
     }
 };
-export const sendMessage = () => ({type: SEND_MESSAGE});
-export const updateNewMessageBody = (body) =>
-    ({type: UPDATE_NEW_MESSAGE_BODY, body: body});
+export const sendMessage = (newMessageBody) => ({type: SEND_MESSAGE, newMessageBody});
+
 export default dialogsReducer;

@@ -1,84 +1,46 @@
 import React from "react";
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
+import {Field, Form, reduxForm} from "redux-form";
 
 
-class MyPosts extends React.Component{
+class MyPosts extends React.Component {
     render() {
 
         let postsElements = this.props.posts.map(p => <Post message={p.message} likescount={p.likesCount}
-                                                       photoava={p.photoAvatar}/>);
+                                                            photoava={p.photoAvatar}/>);
 
-
-        let newPostElement = React.createRef();
-        let onAddPost = () => {
-            this.props.addPost();
+        let onAddPost = (values) => {
+            this.props.addPost(values.newPostText);
         };
 
-        let onPostChange = () => {
-            let text = newPostElement.current.value;
-            this.props.updateNewPostText(text);
-
-        };
 
         return (
             <div className={s.postsBlock}>
                 <h3>My posts</h3>
-                <div>
-                    <textarea onChange={onPostChange} ref={newPostElement} value={this.props.newPostText}/>
-                </div>
-                <div>
-                    <button onClick={onAddPost}>Add post</button>
-                </div>
+                <AddNewPostFormRedux onSubmit={onAddPost}/>
                 <div>
                     new posts
                 </div>
                 <div className={s.posts}>
                     {postsElements}
                 </div>
-
             </div>)
-
     }
 }
 
-/*const MyPosts = (props) => {
-
-
-    let postsElements = props.posts.map(p => <Post message={p.message} likescount={p.likesCount}
-                                                   photoava={p.photoAvatar}/>);
-
-
-    let newPostElement = React.createRef();
-    let onAddPost = () => {
-        props.addPost();
-    };
-
-    let onPostChange = () => {
-        let text = newPostElement.current.value;
-        props.updateNewPostText(text);
-
-    };
-
+let AddNewPostForm = (props) => {
     return (
-        <div className={s.postsBlock}>
-            <h3>My posts</h3>
+        <Form onSubmit={props.handleSubmit}>
             <div>
-                <textarea onChange={onPostChange} ref={newPostElement} value={props.newPostText}/>
-            </div>
-            <div>
-                <button onClick={onAddPost}>Add post</button>
+                <Field name="newPostText" component="textarea"/>
             </div>
             <div>
-                new posts
+                <button>Add post</button>
             </div>
-            <div className={s.posts}>
-                {postsElements}
-            </div>
+        </Form>
+    )
+};
 
-        </div>)
-
-
-};*/
-
+let AddNewPostFormRedux = reduxForm({form: "ProfileAddNewPostForm"})(AddNewPostForm);
 export default MyPosts;

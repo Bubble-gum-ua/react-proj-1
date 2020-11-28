@@ -4,7 +4,6 @@ import PostImage2 from "../Assets/Images/Postimage2.png"
 import {profileAPI, usersAPI} from "../API/Api";
 
 const ADD_POST = "ADD-POST";
-const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 const SET_USER_PROFILE = "SET_USER_PROFILE";
 const SET_STATUS = "SET_STATUS";
 
@@ -18,7 +17,6 @@ let initialState = {
             id: 2, message: "It's my first post", likesCount: 20, photoAvatar: <img alt={""}
                                                                                     src={PostImage2}/>
         },],
-    newPostText: "look at u'r code",
     profile: null,
     status: ""
 
@@ -30,7 +28,7 @@ const profileReducer = (state = initialState, action) => {
         case ADD_POST :
             let newPost = {
                 id: 6,
-                message: state.newPostText,
+                message: action.newPostText,
                 likesCount: 0
             };
             return {
@@ -40,14 +38,6 @@ const profileReducer = (state = initialState, action) => {
             };
 
 
-        case UPDATE_NEW_POST_TEXT : {
-
-            return {
-                ...state,
-                newPostText: action.newText,
-            };
-
-        }
         case SET_STATUS : {
 
             return {
@@ -70,7 +60,7 @@ const profileReducer = (state = initialState, action) => {
 
 
 };
-export const addPost = () => ({type: ADD_POST});
+export const addPost = (newPostText) => ({type: ADD_POST, newPostText});
 export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile});
 export const setStatus = (status) => ({type: SET_STATUS, status});
 export const getUserProfile = (userId) => (dispatch) => {
@@ -93,7 +83,5 @@ export const updateStatus = (status) => (dispatch) => {
             }
         });
 };
-export const updateNewPostText = (text) =>
-    ({type: UPDATE_NEW_POST_TEXT, newText: text});
 
 export default profileReducer;
