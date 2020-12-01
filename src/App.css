@@ -17,6 +17,7 @@
     grid-area: c;
     background-color: darkslategrey;
     color: white;
+    text-align: -webkit-center;
 
 }
 
