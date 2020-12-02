@@ -15,22 +15,22 @@
 .item a {
     color: white;
     text-decoration: none;
+    margin-left: 5px;
 }
 
-.item a:hover {
-    font-size: 18px;
+.item:hover {
+    font-size: 16px;
     font-weight: bold;
     background: #374960; /* Цвет фона */
     box-shadow: 0 0 5px rgba(0, 0, 1, 1); /* Параметры тени */
-    padding: 5px;
+   /* padding: 5px;*/
     border-radius: 3px;
-
-}
+    }
 
 .item a.active {
-    color: #187a72;
+    color: #1ea9a1;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
 
 }
 
