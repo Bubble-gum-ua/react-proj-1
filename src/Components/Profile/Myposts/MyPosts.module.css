@@ -9,3 +9,32 @@
 .posts {
     margin-top: 10px;
 }
+
+.formPost textarea{
+    border: none;
+    width: 250px;
+    height: 50px;
+    background-color: #3c526d;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #343848;
+}
+
+.formPost button{
+    width: 250px;
+    height: 36px;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px #343848;
+    background-color: #187a72;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.formPost button:hover{
+    background-color: #00d5ff;
+    color: #121718;
+}
