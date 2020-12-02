@@ -1,8 +1,10 @@
 .loginForm {
     text-align: center;
     width: 400px;
-    background-color: #7e83ff;
+    background-color: #374960;
     margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #66D9C6;
 
 }
 
@@ -14,12 +16,12 @@
     padding-bottom: 5px;
     margin-bottom: 10px;
     margin-top: 15px;
-    background-color: #1cff98;
+    background-color: #374960;
 }
 
 .loginForm .checkbox {
     font-weight: bold;
-    font-size: 26px;
+    font-size: 18px;
 }
 
 .loginForm button {
@@ -27,15 +29,22 @@
     height: 36px;
     font-weight: 600;
     font-size: 25px;
-    color: gray;
+    color: white;
     margin-bottom: 15px;
     margin-top: 10px;
-    box-shadow: 5px 5px gray;
-    background-color: yellow;
+    box-shadow: 5px 5px 5px gray;
+    background-color: #5BCEBF;
     border: none;
+    border-radius: 5px;
 
 }
 
 .loginForm button:hover {
-    background-color: #0025ff
+    background-color: #00d5ff
+}
+
+.loginForm h1 {
+    font-weight: 600;
+    text-decoration: underline #61D4C3;
+
 }
