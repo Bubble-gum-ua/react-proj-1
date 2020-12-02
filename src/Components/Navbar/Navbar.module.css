@@ -1,12 +1,16 @@
 .nav {
     grid-area: n;
-    background-color: cornflowerblue;
+    background-color: #3c526d;
     padding: 20px;
     opacity: 95%;
     border: 1px solid black;
 
 }
-
+.item {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid black;
+}
 
 .item a {
     color: white;
@@ -14,16 +18,17 @@
 }
 
 .item a:hover {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
-    background: #fc0; /* Цвет фона */
+    background: #374960; /* Цвет фона */
     box-shadow: 0 0 5px rgba(0, 0, 1, 1); /* Параметры тени */
-    padding: 10px;
-    color: darkred;
+    padding: 5px;
+    border-radius: 3px;
+
 }
 
 .item a.active {
-    color: blue;
+    color: #187a72;
     font-weight: bold;
     font-size: 30px;
 
