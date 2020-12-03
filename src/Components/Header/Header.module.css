@@ -8,16 +8,25 @@
 .header img {
     width: 110px;
     margin-left: 50%;
-    margin-top: 0%;
+    margin-top: 0;
 }
 
 
 .loginBlock {
     float: right;
     margin-right: 15px;
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
 
 }
 
 .loginBlock a {
     color: yellow;
+}
+
+.loginBlock a:hover {
+    color: #0eb50e;
+    box-shadow: 5px 5px 5px #343848;
+    padding: 10px;
 }
