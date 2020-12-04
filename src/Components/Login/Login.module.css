@@ -8,7 +8,7 @@
 
 }
 
-.loginForm input {
+.loginForm input[type="text"] {
     width: 250px;
     height: 25px;
     border: none;
@@ -19,9 +19,12 @@
     background-color: #374960;
 }
 
-.loginForm .checkbox {
+.loginForm input[type="checkbox"] {
     font-weight: bold;
     font-size: 18px;
+    margin-right: auto;
+    display: block;
+    margin-left: 75px;
 }
 
 .loginForm button {

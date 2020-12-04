@@ -9,10 +9,10 @@ const LoginForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit} className={styles.loginForm}>
             <div>
-                <Field placeholder={"Login"} name={"login"} validate={[required,maxLength10]} component={Input}/>
+                <Field placeholder={"Login"} name={"login"} validate={[required,maxLength10]} component={Input} type={"text"}/>
             </div>
             <div>
-                <Field placeholder={"Password"} name={"password"} validate={[required,maxLength10]} component={Input}/>
+                <Field placeholder={"Password"} name={"password"} validate={[required,maxLength10]} component={Input} type={"text"}/>
             </div>
             <div className={styles.checkbox}>
                 <Field type={"checkbox"} name={"rememberMe"} component={Input} validate={[required]}/> remember me, bitch
