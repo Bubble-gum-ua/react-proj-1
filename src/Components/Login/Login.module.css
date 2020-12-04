@@ -1,11 +1,25 @@
-.loginForm {
-    text-align: center;
-    width: 400px;
-    background-color: #374960;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #66D9C6;
 
+.mainFormwrapp {
+    display: block;
+    width: 250px;
+    height: 300px;
+    background-color: #374960;
+    margin: 20px;
+    padding: 30px 60px 30px 60px;
+    box-shadow: 5px 5px 5px #66D9C6;
+    border-radius: 5px;
+}
+
+.loginForm button {
+    width: 250px;
+    height: 36px;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    box-shadow: 5px 5px 5px gray;
+    background-color: #5BCEBF;
+    border: none;
+    border-radius: 5px;
 }
 
 .loginForm input[type="text"] {
@@ -24,30 +38,11 @@
     font-size: 18px;
     margin-right: auto;
     display: block;
-    margin-left: 75px;
 }
 
-.loginForm button {
-    width: 250px;
-    height: 36px;
-    font-weight: 600;
-    font-size: 25px;
-    color: white;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    box-shadow: 5px 5px 5px gray;
-    background-color: #5BCEBF;
-    border: none;
-    border-radius: 5px;
-
-}
-
-.loginForm button:hover {
-    background-color: #00d5ff
-}
-
-.loginForm h1 {
+.mainFormwrapp h1 {
     font-weight: 600;
     text-decoration: underline #61D4C3;
+    margin-top: 0;
 
 }
