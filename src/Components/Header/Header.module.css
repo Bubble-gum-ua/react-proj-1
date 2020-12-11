@@ -21,6 +21,24 @@
 
 }
 
+.loginBlock button {
+    width: 70px;
+    height: 36px;
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+    background-color: #15ce5d;
+    border: none;
+    border-radius: 5px;
+}
+
+.loginBlock button:hover {
+    color: #b50f10;
+    box-shadow: 5px 5px 5px #343848;
+    padding: 10px;
+}
+
+
 .loginBlock a {
     color: yellow;
 }
