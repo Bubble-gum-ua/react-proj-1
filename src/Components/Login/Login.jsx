@@ -25,6 +25,9 @@ const LoginForm = (props) => {
                     <Field type={"checkbox"} name={"rememberMe"} component={Input} validate={[required]}/> remember me,
                     bitch
                 </div>
+                {props.error && <div className={styles.formSummaryError}>
+                    {props.error}
+                </div>}
                 <div>
                     <button>
                         Login
@@ -55,4 +58,4 @@ const Login = (props) => {
 const mapStateToProps = (state) => ({
     isAuth: state.auth.isAuth
 });
-export default connect(mapStateToProps,{login})(Login);
+export default connect(mapStateToProps, {login})(Login);

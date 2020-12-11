@@ -57,3 +57,9 @@
     margin-top: 0;
 
 }
+
+.formSummaryError {
+    border: #fff00e 3px solid;
+    padding: 5px;
+    color: #ff142a;
+}
