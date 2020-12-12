@@ -42,7 +42,7 @@ const maxLength30 = maxLengthCreator(30);
 const AddMessageForm = (props) => {
 
     return (
-        <form onSubmit={props.handleSubmit}>
+        <form onSubmit={props.handleSubmit} className={s.messageForm}>
             <div>
                 <Field component={TextArea}
                        validate={[required, maxLength30]}

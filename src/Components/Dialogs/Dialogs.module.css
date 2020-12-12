@@ -7,6 +7,7 @@
 
 .dialogsItems {
     padding: 10px;
+    text-align: left;
 }
 .dialogsItems .active {
     color: blue;
@@ -49,4 +50,10 @@
     background: deepskyblue; /* Цвет фона */
     box-shadow: 0 0 5px rgba(0, 0, 1, 1); /* Параметры тени */
     padding: 10px;
+    width: 170px;
+}
+
+.messageForm {
+    text-align: left;
+    padding-top: 10px;
 }
