@@ -13,9 +13,9 @@ import {
     getFollowingInProgress,
     getIsFetching,
     getPageSize,
-    getTotalUsersCount, getUsers
+    getTotalUsersCount,
+    getUsers
 } from "../../Redux/users-selectors";
-
 
 
 class UsersContainerComponent extends React.Component {
@@ -65,9 +65,9 @@ let mapStateToProps = (state) => {
     }
 };
 
-export default
-compose(
+export default compose(
     connect(mapStateToProps, {
-            follow, unfollow, setCurrentPage,
-            toggleIsFollowingProgress, getUsers: requestUsers }))
-    (UsersContainerComponent);
+        follow, unfollow, setCurrentPage,
+        toggleIsFollowingProgress, getUsers: requestUsers
+    }))
+(UsersContainerComponent);
