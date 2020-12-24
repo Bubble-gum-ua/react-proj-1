@@ -6,37 +6,37 @@ import {maxLengthCreator, required} from "../../../Utils/Validators/validators";
 import {TextArea} from "../../Common/FormsControls/FromsControls";
 
 
-class MyPosts extends React.Component {
-    render() {
+const MyPosts = React.memo(props => {
 
-        let postsElements = this.props.posts.map(p => <Post message={p.message} likescount={p.likesCount}
-                                                            photoava={p.photoAvatar}/>);
+    let postsElements = props.posts.map(p => <Post message={p.message} likescount={p.likesCount}
+                                                   photoava={p.photoAvatar}/>);
 
-        let onAddPost = (values) => {
-            this.props.addPost(values.newPostText);
-        };
+    let onAddPost = (values) => {
+        props.addPost(values.newPostText);
+    };
 
 
-        return (
-            <div className={s.postsBlock}>
-                <h3>My posts</h3>
-                <AddNewPostFormRedux onSubmit={onAddPost}/>
-                <div>
-                    new posts
-                </div>
-                <div className={s.posts}>
-                    {postsElements}
-                </div>
-            </div>)
-    }
-}
+    return (
+        <div className={s.postsBlock}>
+            <h3>My posts</h3>
+            <AddNewPostFormRedux onSubmit={onAddPost}/>
+            <div>
+                new posts
+            </div>
+            <div className={s.posts}>
+                {postsElements}
+            </div>
+        </div>)
+});
+
 const maxLength10 = maxLengthCreator(10);
 
 let AddNewPostForm = (props) => {
     return (
         <Form onSubmit={props.handleSubmit} className={s.formPost}>
             <div>
-                <Field name="newPostText" component={TextArea} placeholder={"Post message"} validate={[required, maxLength10]}/>
+                <Field name="newPostText" component={TextArea} placeholder={"Post message"}
+                       validate={[required, maxLength10]}/>
             </div>
             <div>
                 <button>Add post</button>
