@@ -1,6 +1,6 @@
 import React from "react";
-import {Field, reduxForm} from "redux-form";
-import {Input} from "../Common/FormsControls/FromsControls";
+import {reduxForm} from "redux-form";
+import {createField, Input} from "../Common/FormsControls/FromsControls";
 import {maxLengthCreator, required} from "../../Utils/Validators/validators";
 import styles from "./Login.module.css"
 import {connect} from "react-redux";
@@ -9,25 +9,18 @@ import {Redirect} from "react-router";
 
 
 const maxLength30 = maxLengthCreator(30);
-const LoginForm = (props) => {
+const LoginForm = ({handleSubmit, error}) => {
     return (
-        <form onSubmit={props.handleSubmit} className={styles.loginForm}>
+        <form onSubmit={handleSubmit} className={styles.loginForm}>
             <div>
-                <div>
-                    <Field placeholder={"Email"} name={"email"} validate={[required, maxLength30]} component={Input}
-                           type={"text"}/>
+                {createField("Email", "email", [required, maxLength30], Input, {type: "text"})}
+                {createField("Password", "password", [required, maxLength30], Input, {type: "password"})}
+                {createField(null, "rememberMe", null, "Input", {type: "checkbox"}, "remember me")}
+                {error &&
+                <div className={styles.formSummaryError}>
+                    {error}
                 </div>
-                <div>
-                    <Field placeholder={"Password"} name={"password"} validate={[required, maxLength30]}
-                           component={Input} type={"password"}/>
-                </div>
-                <div>
-                    <Field type={"checkbox"} name={"rememberMe"} component={Input} validate={[required]}/> remember me,
-                    bitch
-                </div>
-                {props.error && <div className={styles.formSummaryError}>
-                    {props.error}
-                </div>}
+                }
                 <div>
                     <button>
                         Login
