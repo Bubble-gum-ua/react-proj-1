@@ -22,7 +22,7 @@
 }
 
 .loginBlock button {
-    width: 70px;
+    width: 100px;
     height: 36px;
     font-weight: 600;
     font-size: 14px;
@@ -30,6 +30,11 @@
     background-color: #15ce5d;
     border: none;
     border-radius: 5px;
+    text-align: left;
+}
+.loginBlock img {
+    width: 20px;
+    padding: 0;
 }
 
 .loginBlock button:hover {

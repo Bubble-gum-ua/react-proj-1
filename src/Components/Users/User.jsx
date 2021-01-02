@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 
 let User = ({user,followingInProgress,unfollow,follow}) => {
        return (
-        <div>
+        <div className={s.usersWrapp}>
                <span>
                    <div>
                        <NavLink to={"/profile/" + user.id}>

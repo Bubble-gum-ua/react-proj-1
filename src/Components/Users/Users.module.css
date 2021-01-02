@@ -3,5 +3,18 @@
     height: 100px;
 }
 
+.usersWrapp {
+    padding: 15px;
+    color: #09c16b;
+}
 
+.usersWrapp button {
+    height: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    background-color: #1b6d62;
+    border: none;
+    border-radius: 5px;
+}
 

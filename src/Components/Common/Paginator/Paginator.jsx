@@ -46,6 +46,5 @@ let Paginator = ({totalItemsCount, pageSize, onPageChanged, portionSize = 10, ..
 
     </div>
 };
-debugger;
 
 export default Paginator;
