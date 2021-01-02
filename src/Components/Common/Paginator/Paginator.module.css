@@ -1,8 +1,13 @@
+.paginator {
+    margin: 10px;
+}
+.pageNumber {
+    padding: 2px;
+    border: 1px solid grey;
+}
+
 .selectedPage {
     font-weight: bold;
-    font-size: 25px;
-    color: #ffcc00;
-    border-radius: 5px;
-    margin-outside: 5px;
-    box-shadow: 0 0 10px rgb(172, 5, 18); /* Параметры тени */
+    border-color: black;
+    color: red;
 }
