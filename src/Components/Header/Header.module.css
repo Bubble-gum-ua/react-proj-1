@@ -35,6 +35,8 @@
 .loginBlock img {
     width: 20px;
     padding: 0;
+    display: inline;
+    margin-left: auto;
 }
 
 .loginBlock button:hover {
