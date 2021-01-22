@@ -17,11 +17,11 @@ let User = ({user,followingInProgress,unfollow,follow}) => {
 
                            ? <button disabled={followingInProgress.some(id => id == user.id)} onClick={() => {
                                unfollow(user.id);
-                           }}> PUSH ON ME, BITCH, FOR UNFOLLOW</button>
+                           }}> PUSH ON ME, DUDE, FOR UNFOLLOW</button>
 
                            : <button disabled={followingInProgress.some(id => id == user.id)} onClick={() => {
                                follow(user.id);
-                           }}> PUSH ON ME, BITCH, FOR FOLLOW</button>}
+                           }}> PUSH ON ME, DUDE, FOR FOLLOW</button>}
 
                </div>
                </span>
