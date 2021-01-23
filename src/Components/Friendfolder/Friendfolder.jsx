@@ -7,7 +7,7 @@ class Friendfolder extends React.Component{
         let state = this.props.friendWrapper;
 
 
-        let friendField = state.map(f=> <FriendList name={f.name} id={f.id} avatar={f.avatar}/>)
+        let friendField = state.map(f=> <FriendList key={f.id} name={f.name} id={f.id} avatar={f.avatar}/>)
         return(
             <div className={s.friends}>
                 <h3>FRIENDS</h3>
